@@ -21,6 +21,22 @@ def compare3(a,b,c):
     else:
         return c
 
-z=compare3(50,100,30)
+z=compare3(30,100,30)
 print(z)
 
+b=5<7<8
+print(b)
+
+a=1
+b=2
+c=3
+print(a if a<b and a<c else b if b<a and b<c else c) 
+
+def comparetuples(a,b):
+    if((a,a)<(b,c)):
+            return a
+    else:
+        return b
+
+d=comparetuples(100,200)
+print(d)
