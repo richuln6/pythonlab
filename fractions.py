@@ -45,3 +45,12 @@ d=fractionslist((1,1),(4,2))
 print(str(d[0])+"/"+str(d[1]))
 
 
+def frac(n1,d1,n2,d2):
+    n=(n1*d2)+(n2*d1)
+    d=d1*d2
+    return(n,d)
+
+tr=frac(1,2,2,4)
+print(str(tr[0])+"/"+str(tr[1]))
+
+
