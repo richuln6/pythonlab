@@ -19,11 +19,12 @@ class fractionclass:
     def add(f1,f2):
         num=(f1.numerator*f2.denomenator)+(f1.denomenator*f2.numerator)
         den=f1.denomenator*f2.denomenator
-        return (num,den)
+        f=fractionclass(num,den)
+        return f
 f1=fractionclass(2,4)
 f2=fractionclass(1,2)
-t=fractionclass.add(f1,f2)
-print(str(t[0])+"/"+str(t[1]))
+f=fractionclass.add(f1,f2)
+print(str(f.numerator)+"/"+str(f.denomenator))
 
 
 def fractiondictionary(t1,t2):
