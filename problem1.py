@@ -2,16 +2,25 @@ def compute(s):
     n=len(s)
     x=0
     st=[]
-    st1=[""]
-    
-    
+    str1,str2="",""
     for i in range(n):
         if(s[i]!='=' and s[i]!=','):
-            st[x]=st[x]+s[i]
-        else: 
-            x=x+1
-    
+            str2=str2+s[i]
+            
+        elif s[i]=='=':
+            str1=str2
+            str2=""
+        else : 
+            st.append((str1,str2))
+            str1=str2=""    
+    st.append((str1,str2))        
     return st
 
-s=compute("a=b,hello=world,d=e")
-print(s,s1)
+S=compute("a=b,hello=world,d=e")
+print(S)
+
+
+
+
+
+
